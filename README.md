@@ -1,5 +1,6 @@
 # Link_APK_build_pemob
 - https://drive.google.com/file/d/1pFmcVMStK_yppN2cVWUngLoL7pUjtz2f/view?usp=sharing
+- https://drive.google.com/file/d/1DQ_1rhmKUeW_yx0yzdTqRlcz72CpxvNY/view?usp=sharing
 
 # pemob_project
 
