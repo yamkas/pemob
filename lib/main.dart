@@ -8,11 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Test Cuy',
+      title: 'Hallo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blueGrey,
       ),
-      home: MyHomePage(title: 'Halaman Utama'),
+      home: MyHomePage(title: 'Profile'),
     );
   }
 }
@@ -27,11 +27,46 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(this.title),
       ),
-      body: Center(
-        child: Text(
-          'Yamka Sudirman 20210801250',
-        ),
+      body: Stack(
+        children: [
+          // Background Image
+          Image.asset(
+            'assets/gray.jpeg', // Ganti dengan path gambar latar belakang Anda
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Profil Image
+                CircleAvatar(
+                  radius: 100,
+                  backgroundImage: AssetImage('assets/yamka.jpg'), // Ganti dengan path gambar profil Anda
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Yamka Sudirman',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  '20210801250',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
 }
+
